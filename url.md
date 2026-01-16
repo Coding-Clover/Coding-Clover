@@ -33,7 +33,8 @@
 /student/courses/{courseId} → 강좌 상세
 /student/courses/{courseId}/lectures → 강의 목록
 /student/lectures/{lectureId} → 강의 시청
-/student/lectures/{courseAdd} → 강의 신청
+/student/courses/{courseId}/enroll → 수강 신청
+/student/courses/{courseId}/cancel → 수강 취소
 
 ### 📌 코딩 연습
 /student/practice            → 실습 문제 목록
@@ -114,8 +115,10 @@
 /admin/courses/pending       → 승인 대기 강좌
 /admin/courses/{id}/approve  → 승인
 /admin/courses/{id}/reject   → 반려
+/admin/courses/{id}/close    → 강좌 신규 모집 종료
 
 /admin/lectures              → 강의 관리
+/admin/lectures/{id}/inactive → 문제 있는 강의 차단
 
 ### 📌 결제 / 커뮤니티 / 시험
 /admin/payments              → 결제 내역
